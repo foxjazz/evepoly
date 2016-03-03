@@ -1,6 +1,8 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin')
 
 // server address
 const SERVER_HOST = 'localhost';
@@ -13,8 +15,6 @@ module.exports = {
       './src/vendor',
       './src/main',
   ],
-
-  devtool: 'cheap-eval-source-map',
 
   output: {
     filename: 'app.js',
@@ -45,7 +45,17 @@ module.exports = {
       hash: false,
       inject: 'body',
       template: './src/index.html'
-    })
+    }),
+    new LoaderOptionsPlugin({
+      minimize: true,
+      debug: false
+    }),
+    new UglifyJsPlugin({
+      beautify: false,
+      mangle: false,
+      compress : { screw_ie8 : true },
+      comments: false
+    }),
   ],
 
   devServer: {
