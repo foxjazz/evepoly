@@ -1,1 +1,1 @@
-Simple example showing Angular2 webpack build with polyfill.io service
+A simple example showing Angular2 bundled using webpack with polyfill.io service.
