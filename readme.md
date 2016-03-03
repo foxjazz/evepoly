@@ -8,6 +8,8 @@ is the reason for it being the largest (currently used in number pipe formatting
 separate polyfill service prevents other browser users from having to pay the download price
 for Safari support.
 
+### Polyfill download size (compressed)
+
 Browser | Size
 --- | ---
 Chrome | 911 bytes

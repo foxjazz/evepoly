@@ -39,12 +39,16 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: '',
+      title: 'Angular2 Webpack Polyfill Demo',
       chunksSortMode: 'none',
       filename: 'index.html',
       hash: false,
       inject: 'body',
-      template: './src/index.html'
+      template: './src/index.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
     }),
     new LoaderOptionsPlugin({
       minimize: true,
