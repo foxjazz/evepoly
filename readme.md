@@ -18,5 +18,5 @@ IE 11 | 2.3 Kb
 
 ## IE Fix
 
-The `src/ie-fix.ts` file is based on [this comment)[https://github.com/angular/angular/issues/6501#issuecomment-181145904]
+The `src/ie-fix.ts` file is based on [this comment](https://github.com/angular/angular/issues/6501#issuecomment-181145904)
 by @justindujardin
