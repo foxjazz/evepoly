@@ -1,0 +1,1 @@
+Simple example showing Angular2 webpack build with polyfill.io service
