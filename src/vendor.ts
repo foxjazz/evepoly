@@ -5,7 +5,10 @@ import 'angular2/bundles/angular2-polyfills';
 
 import "angular2/platform/browser";
 import "angular2/core";
-import "angular2/router";
 import "angular2/http";
 
-import "rxjs";
+// not used in this example:
+// import "angular2/router";
+
+// if creating a vendor bundle, it would make sense to add rxjs here:
+// import "rxjs";
