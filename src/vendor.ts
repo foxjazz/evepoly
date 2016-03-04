@@ -6,9 +6,10 @@ import 'angular2/bundles/angular2-polyfills';
 import "angular2/platform/browser";
 import "angular2/core";
 import "angular2/http";
+import "angular2/router";
 
-// not used in this example:
-// import "angular2/router";
-
-// if creating a vendor bundle, it would make sense to add rxjs here:
-// import "rxjs";
+import "rxjs/Observable";
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/debounceTime';
+import 'rxjs/add/operator/distinctUntilChanged';
+import 'rxjs/add/operator/switchMap';

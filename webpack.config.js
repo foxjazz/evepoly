@@ -1,8 +1,9 @@
 const path = require('path');
 const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CommonsChunkPlugin = require('webpack/lib/optimize/CommonsChunkPlugin');
 const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 // server address
 const SERVER_HOST = 'localhost';
@@ -11,10 +12,10 @@ const SERVER_PORT = '5000';
 module.exports = {
   cache: true,
 
-  entry: [
-      './src/vendor',
-      './src/main',
-  ],
+  entry: {
+      vendor: './src/vendor',
+      app: './src/main',
+  },
 
   output: {
     filename: 'app.js',
@@ -38,6 +39,7 @@ module.exports = {
   },
 
   plugins: [
+    new CommonsChunkPlugin({name:'vendor', filename:'vendor.js'}),
     new HtmlWebpackPlugin({
       title: 'Angular2 Webpack Polyfill Demo',
       chunksSortMode: 'none',
