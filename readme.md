@@ -1,6 +1,17 @@
 #Angular2 Webpack Polyfill
 A simple starter example showing Angular2 bundled using webpack with polyfill.io service.
 
+## Setup
+
+    npm install
+
+Run dev server
+
+    npm start
+
+Build deployment
+
+    npm run build
 
 ## Polyfill service
 The polyfill downloaded is based on the browser user agent. The lack of Intl support in Safari
