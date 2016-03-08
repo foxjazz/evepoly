@@ -1,11 +1,15 @@
-import './ie-fix';
-import 'angular2/bundles/angular2-polyfills';
+// import './ie-fix';
+// import 'angular2/bundles/angular2-polyfills';
 
 import "angular2/platform/browser";
 import "angular2/core";
 import "angular2/http";
 import "angular2/router";
 
+// if we want everything ...
+// import 'rxjs';
+
+// otherwise, for a smaller bundle:
 import "rxjs/Observable";
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/debounceTime';

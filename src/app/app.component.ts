@@ -17,6 +17,7 @@ import {WikipediaService} from '../service/wikipedia.service';
 export class AppComponent {
   items: Observable<Array<string>>;
   term = new Control();
+
   constructor(private wikipediaService: WikipediaService) {
     this.items = wikipediaService.search(this.term.valueChanges);
   }
