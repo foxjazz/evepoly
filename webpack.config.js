@@ -6,7 +6,8 @@ module.exports = {
 
   entry: {
     vendor: [
-      'angular2/bundles/angular2-polyfills',
+//    'angular2/bundles/angular2-polyfills',
+      'zone.js/dist/zone',
       './src/ie-fix.js',
       './src/vendor',
     ],
@@ -32,7 +33,7 @@ module.exports = {
       { test: /\.ts$/, exclude: [/\.spec\.ts$/, 'node_modules'], loader: 'ts' },
     ],
 
-    noParse: [/angular2\/bundles\/.+/]
+    noParse: [/angular2\/bundles\/.+/, /zone\.js\/dist\/.+/]
   },
 
   ts: {

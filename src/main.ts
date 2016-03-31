@@ -5,4 +5,4 @@ import {AppComponent}    from './app/app.component'
 
 enableProdMode();
 
-bootstrap(AppComponent, [JSONP_PROVIDERS]).catch(err => console.error(err));;
+bootstrap(AppComponent, [JSONP_PROVIDERS]);
