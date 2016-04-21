@@ -6,13 +6,16 @@ module.exports = {
 
   entry: {
     vendor: [
-//    polyfills needed if core.js not referenced separately:
-//    'core-js/es6/array',
-//    'core-js/es6/map',
-//    'core-js/es6/string',
-//    'core-js/es6/symbol',
+//    polyfills needed if core.js not referenced separately (also add "core-js": "^2.2.2" to package.json):
+//   'core-js/es6/array',
+//   'core-js/es6/map',
+//   'core-js/es6/string',
+//   'core-js/es6/symbol',
+//   'core-js/es7/reflect',
+
 //    if we want to go with the angular2 provided zone + reflect-metadata
 //    'angular2/bundles/angular2-polyfills',
+
       'zone.js/dist/zone',
       './src/ie-fix.js',
       './src/vendor',
