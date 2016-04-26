@@ -9,16 +9,16 @@
   },
   "license": "ISC",
   "dependencies": {
-    "angular2": "2.0.0-beta.15",
-    "rxjs": "5.0.0-beta.5",
-    "zone.js": "0.6.11"
+    "angular2": "2.0.0-beta.16",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "0.6.12"
   },
   "devDependencies": {
-    "html-webpack-plugin": "^2.9.0",
-    "ts-loader": "^0.8.1",
-    "typescript": "^1.8.5",
-    "typings": "^0.6.8",
-    "webpack": "^2.1.0-beta.4",
+    "html-webpack-plugin": "^2.16.0",
+    "ts-loader": "^0.8.2",
+    "typescript": "^1.8.10",
+    "typings": "^0.6.10",
+    "webpack": "^2.1.0-beta.6",
     "webpack-dev-server": "^2.0.0-beta"
   }
 }
