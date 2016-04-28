@@ -9,7 +9,7 @@ import {WikipediaService} from '../service/wikipedia.service';
     <h2>Wikipedia Search</h2>
     <input type="text" [ngFormControl]="term"/>
     <ul>
-      <li *ngFor="#item of items | async">{{item}}</li>
+      <li *ngFor="let item of items | async">{{item}}</li>
     </ul>
 </div>`,
     providers: [WikipediaService]
