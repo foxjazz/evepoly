@@ -1,11 +1,11 @@
-import "angular2/platform/browser";
-import "angular2/core";
-import "angular2/http";
+import "@angular/platform-browser";
+import "@angular/core";
+import "@angular/http";
 
-// if we want everything ...
+// if we want everything from RxJS ...
 // import 'rxjs';
 
-// otherwise, for a smaller bundle:
+// otherwise, for a smaller bundle just what we use:
 import "rxjs/Observable";
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/debounceTime';
