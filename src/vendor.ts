@@ -1,4 +1,5 @@
 import "@angular/platform-browser";
+import "@angular/common";
 import "@angular/core";
 import "@angular/http";
 
