@@ -17,7 +17,6 @@ module.exports = {
 //    'angular2/bundles/angular2-polyfills',
 
       'zone.js/dist/zone',
-      './src/ie-fix.js',
       './src/vendor',
     ],
     app: [
