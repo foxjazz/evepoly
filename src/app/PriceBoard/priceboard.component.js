@@ -17,10 +17,13 @@ var PriceBoardComponent = (function () {
     }
     PriceBoardComponent.prototype.ngOnInit = function () {
         this.priceBandA = new Array();
+        this.DoAllSelections();
+    };
+    PriceBoardComponent.prototype.loadLocalData = function () {
         document.getElementById('noData').hidden = true;
         this.selSystems = new Array();
         var jsondata = localStorage.getItem('Systems');
-        if (jsondata != null && jsondata.indexOf('volumeEntered') > 0) {
+        if (jsondata != null && jsondata.indexOf('systemid') > 0) {
             this.selSystems = JSON.parse(jsondata);
         }
         else {
@@ -35,10 +38,10 @@ var PriceBoardComponent = (function () {
         else {
             this.selEveItems = new Array();
         }
-        this.DoAllSelections();
     };
     PriceBoardComponent.prototype.refreshData = function () {
         this.priceBandA = new Array();
+        this.loadLocalData();
         this.DoAllSelections();
     };
     PriceBoardComponent.prototype.aggItems = function (region, itemname, data) {

@@ -81,7 +81,7 @@ var RegionComponent = (function () {
         var _this = this;
         var restry = JSON.parse(localStorage.getItem('Systems'));
         var jsondata = localStorage.getItem('Systems');
-        if (jsondata != null && jsondata.indexOf('volumeEntered') > 0) {
+        if (jsondata != null && jsondata.indexOf('systemid') > 0) {
             this.selSystems = JSON.parse(jsondata);
         }
         this.eveService.getRegions().subscribe(function (res2) {
