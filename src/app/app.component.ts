@@ -6,7 +6,7 @@ import {HelpComponent} from './Help/help.component';
 import 'rxjs/Rx';
 
 @Component({
-    selector: 'my-app',
+    selector: 'app',
     template: `<h1>My First Angular 2 App</h1>
     <nav>
         <a (click)="menuitem('help')">Help</a>
