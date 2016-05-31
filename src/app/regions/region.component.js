@@ -102,7 +102,7 @@ var RegionComponent = (function () {
         core_1.Component({
             selector: 'sel-region',
             templateUrl: 'app/regions/region.component.html',
-            styleUrls: ['app/app.css', 'app/Assets/bootstrap/dist/css/bootstrap.min.css'],
+            styleUrls: ['app/appstyle.css', 'app/Assets/bootstrap/dist/css/bootstrap.min.css'],
             providers: [http_eve_service_1.HTTPEveService]
         }), 
         __metadata('design:paramtypes', [http_eve_service_1.HTTPEveService])
