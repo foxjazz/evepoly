@@ -8,10 +8,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
   <title><%= htmlWebpackPlugin.options.title %></title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+   <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+    
 </head>
 <body>
   <app>Loading ...</app>
   <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,console.*,Intl.~locale.en&gated=1"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/core-js/2.3.0/core.min.js"></script>
+  
+  
 </body>
 </html>

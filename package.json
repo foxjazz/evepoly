@@ -1,11 +1,13 @@
 {
-  "name": "angular2-quickstart",
+  "name": "eve-market",
   "version": "1.0.0",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
     "start": "webpack-dev-server --config webpack.dev.js",
+    "e2e": "tsc && concurrently \"http-server\" \"protractor protractor.config.js\"",
     "typings": "typings",
-    "postinstall": "typings install"
+    "postinstall": "typings install",
+    "webdriver:update": "webdriver-manager update"
   },
   "license": "ISC",
   "dependencies": {
@@ -25,9 +27,20 @@
   "devDependencies": {
     "html-webpack-plugin": "^2.16.0",
     "ts-loader": "^0.8.2",
+    "lite-server": "^2.2.0",
     "typescript": "^1.8.10",
     "typings": "^0.8.1",
     "webpack": "^2.1.0-beta.6",
-    "webpack-dev-server": "^2.0.0-beta"
-  }
+    "webpack-dev-server": "^2.0.0-beta",
+    "lodash": "^4.11.1",
+    "jasmine-core": "~2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-cli": "^0.1.2",
+    "karma-htmlfile-reporter": "^0.2.2",
+    "karma-jasmine": "^0.3.8",
+    "protractor": "^3.3.0",
+    "rimraf": "^2.5.2"
+  },
+  "repository": {}
 }

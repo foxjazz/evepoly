@@ -18,14 +18,14 @@
       </ul>
       </div>
       <div class="col-xs-5">
-        <h3> >>>  Systems </h3>
-       <ul class=hal>
+        <h3> > Systems </h3>
+       <ul class=heroes>
              <li *ngFor="let System of avSystems" [class.halselected]="hal === selectedHal" (click)="onSelectStation(System)">
                 {{ System.location.name }} 
              </li>
         </ul>
-         <h3> >>>  Selected Stations </h3>
-        <ul class=halblue>
+         <h3>> Selected Stations </h3>
+        <ul class=heroes>
              <li *ngFor="let sysshort of selSystems" [class.halselected]="hal === selectedHal" (click)="onRemoveStation(sysshort)">
                 {{ sysshort.system }} 
              </li>

@@ -7,7 +7,7 @@ import 'rxjs/Rx';
 
 @Component({
     selector: 'app',
-    template: `<h1>My First Angular 2 App</h1>
+    template: `<h1>Eve Market Data</h1>
     <nav>
         <a (click)="menuitem('help')">Help</a>
         <a (click)="menuitem('region')">Region</a>

@@ -5,11 +5,11 @@
     <div>
         <h1> Price Data </h1>
         <h3 class="error" id="noData"> No Data Selected </h3>
-        <h3> <button (click)="refreshData()">refresh data</button></h3>
+        <h3> <button class="heroes" (click)="refreshData()">refresh data</button></h3>
         <ul class="heroes">
             <li *ngFor="let data of priceBandA">
                 region: {{data.region}}, item: {{data.itemname}}
-                <ul>
+                <ul class="heroes">
                 <li id="quad" *ngFor="let md of data.pricedata">
                     price: {{md.price}}   
                     volume: {{md.volume}} 
