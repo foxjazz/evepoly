@@ -58,7 +58,7 @@ var ItemComponent = (function () {
         core_1.Component({
             selector: 'sel-items',
             templateUrl: 'app/EveItems/item.component.html',
-            styleUrls: ['app/appstyle.css', 'app/Assets/bootstrap/dist/css/bootstrap.min.css'],
+            styleUrls: ['app/appstyle.css'],
             providers: [ItemTypes_service_1.ItemTypesService]
         }), 
         __metadata('design:paramtypes', [ItemTypes_service_1.ItemTypesService])

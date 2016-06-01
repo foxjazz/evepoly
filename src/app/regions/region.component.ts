@@ -7,7 +7,7 @@ import 'rxjs/Rx';
 @Component({
     selector: 'sel-region',
     templateUrl: 'app/regions/region.component.html',
-    styleUrls: ['app/appstyle.css', 'app/Assets/bootstrap/dist/css/bootstrap.min.css'],
+    styleUrls: ['app/appstyle.css'],
     providers: [HTTPEveService]
 })
 

@@ -51,7 +51,7 @@ var AppComponent = (function () {
         core_1.Component({
             selector: 'app',
             template: "<h1>My First Angular 2 App</h1>\n    <nav>\n        <a (click)=\"menuitem('help')\">Help</a>\n        <a (click)=\"menuitem('region')\">Region</a>\n        <a (click)=\"menuitem('items')\">Items</a>\n        <a (click)=\"menuitem('pb')\">Price Board</a>\n    </nav>\n    <div id=\"help\">\n        <sel-help> loading test </sel-help>\n    </div>\n    <div id=\"region\">\n        <sel-region> loading test </sel-region>\n    </div>\n    <div id=\"items\">\n        <sel-items> loading items </sel-items>\n    </div>\n   \n    <div id=\"pb\">\n        <sel-pb> loading canvas </sel-pb>\n    </div>\n    ",
-            styleUrls: ['app/appstyle.css', 'app/Assets/bootstrap/dist/css/bootstrap.min.css'],
+            styleUrls: ['app/appstyle.css'],
             directives: [region_component_1.RegionComponent, item_component_1.ItemComponent, priceboard_component_1.PriceBoardComponent, help_component_1.HelpComponent],
         }), 
         __metadata('design:paramtypes', [])

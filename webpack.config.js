@@ -50,7 +50,7 @@ module.exports = {
 
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Angular2 Webpack Polyfill Demo',
+      title: 'EveOnline pricing project',
       chunksSortMode: 'none',
       filename: 'index.html',
       cache: true,
